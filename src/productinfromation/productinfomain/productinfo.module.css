@@ -1,0 +1,260 @@
+.main1 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row {
+  display: flex;
+
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.main {
+  background-color: #435c70;
+
+  height: auto;
+  padding: 40px;
+  width: 60%;
+  box-shadow: 1px 1px 5px 0 #455c71;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+}
+.div1 {
+  position: relative;
+  width: 80%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.productdiv {
+  margin-bottom: 40px;
+}
+.labels1 {
+  color: #fff;
+  margin-left: 20px;
+}
+.labels {
+  color: #fff;
+}
+.productinput {
+  padding: 19px 18px;
+  border-radius: 0;
+  height: auto;
+  background-color: #54657d;
+  color: #fff;
+  border: 0;
+  display: block;
+  width: 90%;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.productinput1 {
+  padding: 19px 18px;
+  border-radius: 0;
+  height: 50px;
+  background-color: #54657d;
+  color: #fff;
+  border: 0;
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: 20px;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.div2 {
+  width: 50%;
+  min-height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgdiv {
+  max-width: 100%;
+  position: relative;
+}
+.imgdiv img {
+  max-width: 100%;
+  height: auto;
+}
+.div2sub {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  margin-bottom: 0;
+}
+.btn {
+  color: #fff;
+  background-color: #f5a623;
+  border: 2px solid #f5a623;
+  font-size: 90%;
+  font-weight: 600;
+  border-radius: 0;
+  padding: 13px 28px;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 30px;
+}
+.btn:hover {
+  color: #f5a623;
+  background-color: transparent;
+  border: 2px solid #f5a623;
+}
+.btn1 {
+  color: #fff;
+  background-color: #f5a623;
+  border: 2px solid #f5a623;
+  font-size: 90%;
+  font-weight: 600;
+  border-radius: 0;
+  padding: 13px 28px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.btn1:hover {
+  color: #f5a623;
+  background-color: transparent;
+  border: 2px solid #f5a623;
+}
+@media only screen and (max-width: 1200px) {
+  .main1 {
+    width: 100%;
+  }
+  .main {
+    height: 1320px;
+    width: 70%;
+  }
+  .productinput {
+    width: 140%;
+  }
+  .productinput1 {
+    width: 130%;
+  }
+  .row {
+    width: 110%;
+    display: block;
+    height: 10px;
+  }
+  .div1 {
+    width: 70%;
+    margin-left: -10px;
+  }
+  .div2 {
+    margin-top: 270px;
+    width: 50%;
+  }
+  .btn {
+    margin-top: 1120px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .main1 {
+    width: 80%;
+  }
+  .main {
+    height: 1380px;
+    width: 100%;
+  }
+  .productinput {
+    width: 140%;
+  }
+  .productinput1 {
+    width: 130%;
+  }
+  .row {
+    width: 110%;
+    display: block;
+    height: 10px;
+  }
+  .div1 {
+    width: 70%;
+    margin-left: -10px;
+  }
+  .div2 {
+    margin-top: 270px;
+    width: 60%;
+  }
+  .btn {
+    margin-top: 1180px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main1 {
+    width: 80%;
+  }
+  .main {
+    height: 1280px;
+    width: 100%;
+  }
+  .productinput {
+    width: 140%;
+  }
+  .productinput1 {
+    width: 130%;
+  }
+  .row {
+    width: 110%;
+    display: block;
+    height: 10px;
+  }
+  .div1 {
+    width: 70%;
+    margin-left: -10px;
+  }
+  .div2 {
+    margin-top: 270px;
+    width: 100%;
+  }
+  .btn {
+    margin-top: 1070px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main1 {
+    width: 100%;
+  }
+  .main {
+    height: 1280px;
+    width: 100%;
+  }
+  .productinput {
+    width: 140%;
+  }
+  .productinput1 {
+    width: 130%;
+  }
+  .row {
+    width: 120%;
+    display: block;
+    height: 10px;
+  }
+  .div1 {
+    width: 70%;
+    margin-left: -10px;
+  }
+  .div2 {
+    margin-top: 270px;
+    width: 100%;
+  }
+  .btn {
+    margin-top: 1070px;
+  }
+}

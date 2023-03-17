@@ -1,0 +1,90 @@
+/* import React, { useState, useEffect } from 'react';
+
+const AccountForm = () => {
+  const [profileInfo, setProfileInfo] = useState({
+    name: '',
+    email: '',
+    password: '',
+    accountType: '',
+    profilePic: null,
+  });
+  const [profilePicURL, setProfilePicURL] = useState(null);
+  const [isUpdated, setIsUpdated] = useState(false);
+
+  useEffect(() => {
+    // Retrieve the profile info from local storage and update the state
+    const storedProfileInfo = localStorage.getItem('profileInfo');
+    if (storedProfileInfo) {
+      setProfileInfo(JSON.parse(storedProfileInfo));
+    }
+  }, []);
+
+  const handleAccountTypeChange = (event) => {
+    // Update the account type in the state
+    const selectedAccountType = event.target.value;
+    setProfileInfo({ ...profileInfo, accountType: selectedAccountType });
+  };
+
+  const handlePhotoUpload = (event) => {
+    // Update the profile picture in the state
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        setProfilePicURL(reader.result);
+        setProfileInfo({ ...profileInfo, profilePic: reader.result });
+      };
+    }
+  };
+
+  const handlePhotoDelete = () => {
+    // Remove the profile picture from the state
+    setProfilePicURL(null);
+    setProfileInfo({ ...profileInfo, profilePic: null });
+  };
+
+  const handleFieldChange = (event) => {
+    // Update the profile info in the state
+    const { name, value } = event.target;
+    setProfileInfo({ ...profileInfo, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Store the profile info in local storage and update the state
+    localStorage.setItem('profileInfo', JSON.stringify(profileInfo));
+    setIsUpdated(true);
+  };
+
+  return (
+    <div>
+      <select value={profileInfo.accountType} onChange={handleAccountTypeChange}>
+        <option value="">Select an account type</option>
+        <option value="admin">Admin</option>
+        <option value="editor">Editor</option>
+        <option value="merchant">Merchant</option>
+        <option value="customer">Customer</option>
+      </select>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="name" value={profileInfo.name} onChange={handleFieldChange} />
+        <input type="text" name="email" value={profileInfo.email} onChange={handleFieldChange} />
+        <input type="password" name="password" value={profileInfo.password} onChange={handleFieldChange} />
+        {profilePicURL ? (
+          <div>
+            <img src={profilePicURL} alt="Profile" />
+            <button type="button" onClick={handlePhotoDelete}>Delete</button>
+          </div>
+        ) : (
+          <input type="file" onChange={handlePhotoUpload} />
+        )}
+        <button type="submit">UPDATE YOUR PROFILE</button>
+      </form>
+      {isUpdated && (
+        <div className="confirmation-message">Information Updated Successfully!</div>
+      )}
+    </div>
+  );
+};
+
+export default AccountForm; */
